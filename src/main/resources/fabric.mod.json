@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "mct32s-armor-hud",
+	"version": "${version}",
+	"name": "MCT32's Armor HUD",
+	"description": "Minimal armor hud",
+	"authors": [
+		"MCT32"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/MCT32/mct32s-armor-hud"
+	},
+	"license": "MIT",
+	"icon": "assets/mct32s-armor-hud/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mct32.mct32sarmorhud.MCT32sArmorHUD"
+		],
+		"client": [
+			"mct32.mct32sarmorhud.MCT32sArmorHUDClient"
+		]
+	},
+	"mixins": [
+		"mct32s-armor-hud.mixins.json",
+		{
+			"config": "mct32s-armor-hud.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
