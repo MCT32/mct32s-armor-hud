@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.mct32s-armor-hud.title": "MCT32's Armor HUD Config",
+  "text.autoconfig.mct32s-armor-hud.option.gap_x": "Left Gap",
+  "text.autoconfig.mct32s-armor-hud.option.gap_y": "Bottom Gap",
+  "text.autoconfig.mct32s-armor-hud.option.offset": "Item Offset"
+}

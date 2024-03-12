@@ -8,34 +8,27 @@
 		"MCT32"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/MCT32/mct32s-armor-hud",
+		"issues": "https://github.com/MCT32/mct32s-armor-hud/issues",
 		"sources": "https://github.com/MCT32/mct32s-armor-hud"
 	},
 	"license": "MIT",
 	"icon": "assets/mct32s-armor-hud/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"mct32.mct32sarmorhud.MCT32sArmorHUD"
-		],
 		"client": [
 			"mct32.mct32sarmorhud.MCT32sArmorHUDClient"
+		],
+		"modmenu": [
+			"mct32.mct32sarmorhud.ArmorHUDModMenuIntegration"
 		]
 	},
-	"mixins": [
-		"mct32s-armor-hud.mixins.json",
-		{
-			"config": "mct32s-armor-hud.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
 		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabric-api": "*",
+		"modmenu": ">=9.0.0",
+		"cloth-config": ">=13.0.121"
 	}
 }
